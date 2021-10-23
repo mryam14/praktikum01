@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <title>Form Pemesanan Pizza</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+            <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+        </header>
+        <p>Your Information</p>
+        <form method="POST" action="http://blackgoosebistro.com/pizza.php">
+            <div>
+                <label>Name :</label>
+                <input style="margin-bottom:5px;" type="text" name="customername">
+                <br>
+                <label>Address :</label>
+                <input style="margin-bottom: 5px;" type="text" name="address">
+                <br>
+                <label>Telephone Number :</label>
+                <input style="margin-bottom: 5px;" type="number" name="telephone">
+                <br>
+                <label>Email:</label>
+                <input style="margin-bottom: 5px;" type="text" name="email">
+                <br>
+                <label style="margin-bottom: 5px;">Delivery Intructions :</label>
+                <br>
+                <textarea name="intruction" placeholder="No more than 400 characters long" cols="35" rows="4" maxlength="400"></textarea>
+            </div>
+            <div>
+                <h3 style="margin-bottom: -15px;">Design Your Dream Pizza :</h3>
+                <p>Pizza specs</p>
+                <label>Crust (Choose one) :</label>
+                <br>
+                <input style="margin-left: 15px;" type="radio" required="">Classic white
+                <br>
+                <input style="margin-left: 15px;" type="radio" required="">Multigrain
+                <br>
+                <input style="margin-left: 15px;" type="radio" required="">Cheese-stuffed crust
+                <br>
+                <input style="margin-left: 15px;" type="radio" required="">Gluten-free
+            </div>
+            <div>
+                <label>Toppings (Choose as many you want) :</label>
+                <br>
+                <input style="margin-left: 15px;" type="checkbox" checked="">Red sauce
+                <br>
+                <input style="margin-left: 15px;" type="checkbox">White sauce
+                <br>
+                <input style="margin-left: 15px;" type="checkbox">Mozzarella Cheese
+                <br>
+                <input style="margin-left: 15px;" type="checkbox">Pepperoni
+                <br>
+                <input style="margin-left: 15px;" type="checkbox">Mushrooms
+                <br>
+                <input style="margin-left: 15px;" type="checkbox">Peppers
+                <br>
+                <input style="margin-left: 15px;" type="checkbox">Anchovies
+                <br>
+            <div>
+                <p style="margin-bottom: -3px;">Number</p>
+                <label>How many pizzas :</label>
+                <select id="how-many-pizzas">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+            </div>
+                <br>
+                <button type="submit" value="submit">Bring me a pizza!</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>
+        
+
+
+
+
+
+            
